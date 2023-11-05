@@ -90,7 +90,7 @@ public class BaseQueryTuner {
       return false;
     }
 
-    if (query.getProfilingListener() != null) {
+    if (query.profilingListener() != null) {
       // profiling secondary query
       return false;
     }
@@ -102,7 +102,7 @@ public class BaseQueryTuner {
       return false;
     }
 
-    if (query.getParentNode() != null) {
+    if (query.parentNode() != null) {
       // This is a +lazy/+query query with profiling on.
       // We continue to collect the profiling information.
       query.setProfilingListener(profilingListener);
@@ -139,7 +139,7 @@ public class BaseQueryTuner {
    * </p>
    */
   private boolean tunableQuery(SpiQuery<?> query) {
-    SpiQuery.Type type = query.getType();
+    SpiQuery.Type type = query.type();
     switch (type) {
       case COUNT:
       case ATTRIBUTE:
@@ -153,7 +153,7 @@ public class BaseQueryTuner {
       default:
         // not using autoTune when explicitly loading the l2 bean cache
         // or when using Versions query
-        return !query.isForceHitDatabase() && SpiQuery.TemporalMode.VERSIONS != query.getTemporalMode();
+        return !query.isForceHitDatabase() && SpiQuery.TemporalMode.VERSIONS != query.temporalMode();
     }
   }
 

@@ -1,8 +1,8 @@
 package io.ebeaninternal.server.autotune.service;
 
 import io.avaje.applog.AppLog;
+import io.ebean.DatabaseBuilder;
 import io.ebean.config.AutoTuneConfig;
-import io.ebean.config.DatabaseConfig;
 import io.ebeaninternal.api.SpiEbeanServer;
 import io.ebeaninternal.api.SpiQuery;
 import io.ebeaninternal.server.autotune.AutoTuneService;
@@ -52,8 +52,8 @@ public class DefaultAutoTuneService implements AutoTuneService {
 
   private long runtimeChangeCount;
 
-  public DefaultAutoTuneService(SpiEbeanServer server, DatabaseConfig databaseConfig) {
-    AutoTuneConfig config = databaseConfig.getAutoTuneConfig();
+  public DefaultAutoTuneService(SpiEbeanServer server, DatabaseBuilder builder) {
+    AutoTuneConfig config = builder.settings().getAutoTuneConfig();
     this.server = server;
     this.queryTuning = config.isQueryTuning();
     this.profiling = config.isProfiling();

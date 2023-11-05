@@ -1,6 +1,6 @@
 package io.ebean.joda.time;
 
-import io.ebean.config.DatabaseConfig;
+import io.ebean.DatabaseBuilder;
 import io.ebean.core.type.ExtraTypeFactory;
 import io.ebean.core.type.ScalarType;
 
@@ -13,7 +13,7 @@ import java.util.List;
 public class JodaExtraTypeFactory implements ExtraTypeFactory {
 
   @Override
-  public List<? extends ScalarType<?>> createTypes(DatabaseConfig config, Object objectMapper) {
+  public List<? extends ScalarType<?>> createTypes(DatabaseBuilder.Settings config, Object objectMapper) {
     var jsonDateTime = config.getJsonDateTime();
     var jsonDate = config.getJsonDate();
 

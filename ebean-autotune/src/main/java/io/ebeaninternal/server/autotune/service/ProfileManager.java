@@ -64,7 +64,7 @@ public class ProfileManager implements ProfilingListener {
   private ProfileOrigin createProfileOrigin(ObjectGraphNode origin, SpiQuery<?> query) {
     ProfileOrigin profileOrigin = new ProfileOrigin(origin.origin(), queryTuningAddVersion, profilingBase, profilingRate);
     // set the current query detail (fetch group) so that we can compare against profiling for new entries
-    profileOrigin.setOriginalQuery(query.getDetail().asString());
+    profileOrigin.setOriginalQuery(query.detail().asString());
     return profileOrigin;
   }
 

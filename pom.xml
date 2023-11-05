@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.avaje</groupId>
     <artifactId>java11-oss</artifactId>
-    <version>3.10</version>
+    <version>3.12</version>
   </parent>
 
   <groupId>io.ebean</groupId>
   <artifactId>ebean-components-parent</artifactId>
-  <version>13.18.0</version>
+  <version>13.24.0</version>
   <packaging>pom</packaging>
 
   <name>ebean parent</name>
@@ -34,7 +34,7 @@
     <jackson.version>2.15.0</jackson.version>
     <h2database.version>2.1.214</h2database.version>
     <ebean-types.version>3.0</ebean-types.version>
-    <ebean-datasource.version>8.5</ebean-datasource.version>
+    <ebean-datasource.version>8.8</ebean-datasource.version>
     <surefire.useModulePath>false</surefire.useModulePath>
   </properties>
 
@@ -62,7 +62,6 @@
     <module>ebean-csv-reader</module>
     <module>ebean-externalmapping-api</module>
     <module>ebean-externalmapping-xml</module>
-   
     <module>ebean-joda-time</module>
     <module>ebean-jackson-jsonnode</module>
 <!--
