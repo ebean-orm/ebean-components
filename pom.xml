@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.avaje</groupId>
     <artifactId>java11-oss</artifactId>
-    <version>3.12</version>
+    <version>4.0</version>
   </parent>
 
   <groupId>io.ebean</groupId>
@@ -34,7 +34,7 @@
     <jackson.version>2.15.0</jackson.version>
     <h2database.version>2.1.214</h2database.version>
     <ebean-types.version>3.0</ebean-types.version>
-    <ebean-datasource.version>8.8</ebean-datasource.version>
+    <ebean-datasource.version>8.12</ebean-datasource.version>
     <surefire.useModulePath>false</surefire.useModulePath>
   </properties>
 
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.2.11</version>
+      <version>1.5.0</version>
       <scope>test</scope>
     </dependency>
 
