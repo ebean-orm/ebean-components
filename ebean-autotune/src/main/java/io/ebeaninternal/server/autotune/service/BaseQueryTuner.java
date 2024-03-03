@@ -10,7 +10,6 @@ import io.ebeaninternal.server.autotune.ProfilingListener;
 import io.ebeaninternal.server.autotune.model.Origin;
 import io.ebeaninternal.server.querydefn.OrmQueryDetail;
 
-import javax.persistence.PersistenceException;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
@@ -190,7 +189,7 @@ public class BaseQueryTuner {
           return query.isDetailEmpty();
 
         default:
-          throw new PersistenceException("Invalid AutoTuneMode " + mode);
+          throw new IllegalArgumentException("Invalid AutoTuneMode " + mode);
       }
     }
   }
