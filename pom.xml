@@ -9,7 +9,7 @@
 
   <groupId>io.ebean</groupId>
   <artifactId>ebean-components-parent</artifactId>
-  <version>14.0.0</version>
+  <version>16.1.0</version>
   <packaging>pom</packaging>
 
   <name>ebean parent</name>
@@ -17,6 +17,7 @@
   <url>https://ebean.io/</url>
 
   <scm>
+    <url>https://github.com/ebean-orm/ebean</url>
     <developerConnection>scm:git:git@github.com:ebean-orm/ebean-components.git</developerConnection>
     <tag>HEAD</tag>
   </scm>

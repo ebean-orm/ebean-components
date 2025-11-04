@@ -4,11 +4,12 @@
   <parent>
     <artifactId>ebean-parent</artifactId>
     <groupId>io.ebean</groupId>
-    <version>14.0.0</version>
+    <version>16.1.0</version>
   </parent>
 
   <artifactId>ebean-jackson-jsonnode</artifactId>
-  <version>14.0.0</version>
+  <name>ebean-jackson-jsonnode</name>
+  <version>16.1.0</version>
 
   <dependencies>
 

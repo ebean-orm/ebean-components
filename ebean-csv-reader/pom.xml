@@ -2,12 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>ebean-components-parent</artifactId>
+    <artifactId>ebean-parent</artifactId>
     <groupId>io.ebean</groupId>
-    <version>14.0.0</version>
+    <version>16.1.0</version>
   </parent>
 
   <artifactId>ebean-csv-reader</artifactId>
+  <name>ebean-csv-reader</name>
+  <version>16.1.0</version>
 
   <dependencies>
 

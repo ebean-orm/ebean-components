@@ -4,17 +4,13 @@
   <parent>
     <artifactId>ebean-parent</artifactId>
     <groupId>io.ebean</groupId>
-    <version>14.0.0</version>
+    <version>16.1.0</version>
   </parent>
-
-  <scm>
-    <developerConnection>scm:git:git@github.com:ebean-orm/ebean.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
 
   <name>ebean external mapping xml</name>
   <description>XML implementation for mapping external named queries</description>
   <artifactId>ebean-externalmapping-xml</artifactId>
+  <version>16.1.0</version>
 
   <dependencies>
 
