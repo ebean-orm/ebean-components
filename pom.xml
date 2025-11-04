@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.avaje</groupId>
     <artifactId>java11-oss</artifactId>
-    <version>4.0</version>
+    <version>5.1</version>
   </parent>
 
   <groupId>io.ebean</groupId>
@@ -34,7 +34,7 @@
     <jackson.version>2.15.0</jackson.version>
     <h2database.version>2.1.214</h2database.version>
     <ebean-types.version>3.0</ebean-types.version>
-    <ebean-datasource.version>8.12</ebean-datasource.version>
+    <ebean-datasource.version>10.1</ebean-datasource.version>
     <surefire.useModulePath>false</surefire.useModulePath>
   </properties>
 

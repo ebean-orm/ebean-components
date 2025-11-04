@@ -52,7 +52,7 @@ public class TunedQueryInfo implements Serializable {
     if (query.isDetailEmpty()) {
       tuned = true;
       // tune by 'replacement'
-      query.setDetail(tunedDetail.copy());
+      query.setDetail(tunedDetail.copy(null));
     } else {
       // tune by 'addition'
       tuned = query.tuneFetchProperties(tunedDetail);
