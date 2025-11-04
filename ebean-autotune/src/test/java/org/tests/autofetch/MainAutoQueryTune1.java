@@ -23,7 +23,7 @@ public class MainAutoQueryTune1 {
       .where()
       .eq("status", Order.Status.NEW)
       .eq("customer.name", "Rob")
-      .order().asc("id")
+      .orderBy().asc("id")
       .findList();
 
     for (Order order : list) {

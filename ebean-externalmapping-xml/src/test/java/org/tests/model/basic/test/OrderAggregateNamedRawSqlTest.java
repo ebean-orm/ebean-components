@@ -34,7 +34,7 @@ public class OrderAggregateNamedRawSqlTest {
     query
       .where().gt("order.id", 1)
       .having().gt("totalItems", 1)
-      .order().desc("totalAmount")
+      .orderBy().desc("totalAmount")
       .findList();
 
     assertSql(query).contains("count(*) as total_items, sum(order_qty*unit_price) as total_amount, max(order_qty*unit_price) as maxAmount from o_order_detail");
@@ -49,7 +49,7 @@ public class OrderAggregateNamedRawSqlTest {
       .setParameter("minId", 2)
       .where().isNotNull("order.id")
       .having().lt("totalAmount", 100)
-      .order().desc("totalAmount")
+      .orderBy().desc("totalAmount")
       .setMaxRows(10)
       .findList();
 

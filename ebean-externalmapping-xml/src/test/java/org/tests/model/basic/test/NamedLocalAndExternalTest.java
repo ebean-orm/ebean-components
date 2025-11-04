@@ -34,7 +34,7 @@ public class NamedLocalAndExternalTest extends BaseTestCase {
   public void namedQuery_withStatus() {
 
     Query<Customer> name = server().createNamedQuery(Customer.class, "withStatus");
-    name.order().clear().asc("status");
+    name.orderBy().clear().asc("status");
     name.findList();
 
     assertThat(sqlOf(name)).contains("select t0.id, t0.name, t0.status from o_customer t0 order by t0.status");
